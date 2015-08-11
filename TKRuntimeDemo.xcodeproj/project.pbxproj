@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		E69445BC1B79CD76006EC828 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E69445BB1B79CD76006EC828 /* main.m */; };
 		E69445BF1B79CD76006EC828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E69445BE1B79CD76006EC828 /* AppDelegate.m */; };
-		E69445C21B79CD76006EC828 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69445C11B79CD76006EC828 /* ViewController.m */; };
-		E69445C51B79CD76006EC828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69445C31B79CD76006EC828 /* Main.storyboard */; };
 		E69445C71B79CD76006EC828 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69445C61B79CD76006EC828 /* Images.xcassets */; };
 		E69445CA1B79CD76006EC828 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69445C81B79CD76006EC828 /* LaunchScreen.xib */; };
 		E69445D61B79CD76006EC828 /* TKRuntimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E69445D51B79CD76006EC828 /* TKRuntimeDemoTests.m */; };
+		E69445E11B79CE2F006EC828 /* TKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69445E01B79CE2F006EC828 /* TKMainViewController.m */; };
+		E69445E41B79D2D0006EC828 /* TKSceondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69445E31B79D2D0006EC828 /* TKSceondViewController.m */; };
+		E69445E71B79D4AB006EC828 /* RTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E69445E61B79D4AB006EC828 /* RTHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,17 @@
 		E69445BB1B79CD76006EC828 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E69445BD1B79CD76006EC828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E69445BE1B79CD76006EC828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E69445C01B79CD76006EC828 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E69445C11B79CD76006EC828 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E69445C41B79CD76006EC828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E69445C61B79CD76006EC828 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E69445C91B79CD76006EC828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E69445CF1B79CD76006EC828 /* TKRuntimeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKRuntimeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69445D41B79CD76006EC828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E69445D51B79CD76006EC828 /* TKRuntimeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKRuntimeDemoTests.m; sourceTree = "<group>"; };
+		E69445DF1B79CE2F006EC828 /* TKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMainViewController.h; sourceTree = "<group>"; };
+		E69445E01B79CE2F006EC828 /* TKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMainViewController.m; sourceTree = "<group>"; };
+		E69445E21B79D2D0006EC828 /* TKSceondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSceondViewController.h; sourceTree = "<group>"; };
+		E69445E31B79D2D0006EC828 /* TKSceondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSceondViewController.m; sourceTree = "<group>"; };
+		E69445E51B79D4AB006EC828 /* RTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTHelper.h; sourceTree = "<group>"; };
+		E69445E61B79D4AB006EC828 /* RTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +87,12 @@
 			children = (
 				E69445BD1B79CD76006EC828 /* AppDelegate.h */,
 				E69445BE1B79CD76006EC828 /* AppDelegate.m */,
-				E69445C01B79CD76006EC828 /* ViewController.h */,
-				E69445C11B79CD76006EC828 /* ViewController.m */,
-				E69445C31B79CD76006EC828 /* Main.storyboard */,
+				E69445DF1B79CE2F006EC828 /* TKMainViewController.h */,
+				E69445E01B79CE2F006EC828 /* TKMainViewController.m */,
+				E69445E21B79D2D0006EC828 /* TKSceondViewController.h */,
+				E69445E31B79D2D0006EC828 /* TKSceondViewController.m */,
+				E69445E51B79D4AB006EC828 /* RTHelper.h */,
+				E69445E61B79D4AB006EC828 /* RTHelper.m */,
 				E69445C61B79CD76006EC828 /* Images.xcassets */,
 				E69445C81B79CD76006EC828 /* LaunchScreen.xib */,
 				E69445B91B79CD76006EC828 /* Supporting Files */,
@@ -199,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69445C51B79CD76006EC828 /* Main.storyboard in Resources */,
 				E69445CA1B79CD76006EC828 /* LaunchScreen.xib in Resources */,
 				E69445C71B79CD76006EC828 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69445C21B79CD76006EC828 /* ViewController.m in Sources */,
 				E69445BF1B79CD76006EC828 /* AppDelegate.m in Sources */,
+				E69445E41B79D2D0006EC828 /* TKSceondViewController.m in Sources */,
 				E69445BC1B79CD76006EC828 /* main.m in Sources */,
+				E69445E71B79D4AB006EC828 /* RTHelper.m in Sources */,
+				E69445E11B79CE2F006EC828 /* TKMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +252,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E69445C31B79CD76006EC828 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E69445C41B79CD76006EC828 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E69445C81B79CD76006EC828 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
