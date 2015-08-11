@@ -83,15 +83,45 @@ float myFloat = 0.0f;
     id ob = object_getIvar(self, ivarOb);
     NSLog(@"ob = %@", ob);
     
-//    Method m1 = class_getInstanceMethod([NSString class], @selector(replaceMethod));
-//    class_replaceMethod([NSString class], @selector(UTF8String), method_getImplementation(m1), <#const char *types#>)
     
+    Method m1 = class_getInstanceMethod([self class], @selector(replaceMethod:));
+    class_replaceMethod([self class], @selector(demoReplaceMethod:), method_getImplementation(m1), NULL);
+    
+    [self replaceMethod:@"hello world"];
+    [self demoReplaceMethod:@"world heool"];
+    
+    SEL sel = @selector(methodByAddForStr);
+    class_addMethod([self class], sel ,class_getMethodImplementation([self class], @selector(methodByAdd)), NULL);
+    
+    [self performSelector:sel];
+    
+    static char *assKey;
+    NSString *strName = [NSString stringWithUTF8String:object_getClassName(self)];
+    objc_setAssociatedObject(self, assKey, strName, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    
+    
+    id assOb = objc_getAssociatedObject(self, assKey);
+    NSLog(@"assob = %@", assOb);
+    
+    objc_setAssociatedObject(self, assKey, nil, OBJC_ASSOCIATION_ASSIGN);
+    id assOb1 = objc_getAssociatedObject(self, assKey);
+    NSLog(@"assob = %@", assOb1);
     
 }
 
--(void)replaceMethod
+-(void)replaceMethod:(NSString *)str1
 {
-    NSLog(@"this is replaceMethod");
+    NSLog(@"this is replaceMethod %@", str1);
+}
+
+-(void)demoReplaceMethod:(NSString *)str1
+{
+    NSLog(@"this is demoReplaceMethod %@", str1);
+}
+
+-(void)methodByAdd
+{
+    NSLog(@"this is methodByAdd ");
 }
 
 -(void)popButtonClicked:(UIButton *)sender

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B37A5F16-C34B-4F29-B0D7-FE0EA71E429B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TKRuntimeDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>88211DA7EA8D172B6C279F1A1926DC8DD73120C1</key>
+		<string>github.com:icemilk00/TKRuntimeDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TKRuntimeDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>88211DA7EA8D172B6C279F1A1926DC8DD73120C1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:icemilk00/TKRuntimeDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>88211DA7EA8D172B6C279F1A1926DC8DD73120C1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88211DA7EA8D172B6C279F1A1926DC8DD73120C1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TKRuntimeDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
